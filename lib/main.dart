@@ -10,7 +10,12 @@ class MyApp extends StatelessWidget {
   return MaterialApp(home: Scaffold(
 appBar: AppBar(title: Text('top title bar')
 ),
-body: Text('hello there i am suraksha'),
+body: Column(children: [
+  Text('question is there'),
+  RaisedButton(child: Text('answer1'), onPressed: null ),
+  RaisedButton(child: Text('answer2'), onPressed: null ),
+   RaisedButton(child: Text('answer3'), onPressed: null ),
+],)
   ), 
   );
   }
